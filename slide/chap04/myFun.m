@@ -16,7 +16,7 @@ function [vt, vt1, vt2] = myFun(vm, omega, t, theta, sigma)
 % Fungsi Sinusoidal
     vt1 = vm * cos(omega * t + theta);
 
-    vt2 = exp(-sigma * t);
+    vt2 = exp(sigma * t);
 
     vt = vt1 .* vt2;
 end
